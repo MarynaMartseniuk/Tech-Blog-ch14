@@ -1,0 +1,44 @@
+[
+    {
+      "title": "npm is to build amazing things",
+      "content": "To learn more go to https://www.npmjs.com how to get a lot of useful tools",
+      "user_id": 1,
+      "date": "14/10/2022"
+    },
+    {
+        "title": "npm libraries you will need for challenge 14",
+        "content": "You’ll need to use express-handlebars, sequelize, pg, dotenv,  bcrypt, express-sessions, connect-sessions-sequelize, express-sessions",
+        "user_id": 4,
+        "date": "20/01/2023"
+    },
+    {
+        "title": "A programming language",
+        "content": "A programming language is a system of notation for writing computer programs. To learn more, please, visit website https://en.wikipedia.org/wiki/Programming_language",
+        "user_id": 3,
+        "date": "18/03/2021"
+    },
+    {
+        "title": "History of computing hardware",
+        "content": "The history of computing hardware covers the developments from early simple devices to aid calculation to modern day computers. To learn more, please, visit website https://en.wikipedia.org/wiki/History_of_computing_hardware",
+        "user_id": 1,
+        "date": "05/04/2022"
+    },
+    {
+        "title": "source of docs",
+        "content": "Found it useful: https://developer.mozilla.org/en-US/, https://www.w3schools.com/",
+        "user_id": 2,
+        "date": "02/01/2024"
+    },    
+    {
+        "title": "Where to go on vation",
+        "content": "to find top best websites to manage vacation check this: https://www.travelinglifestyle.net/best-travel-planning-apps/",
+        "user_id": 2,
+        "date": "11/06/2021"
+    },
+    {
+        "title": "DB-Engines Ranking",
+        "content": "check this: https://db-engines.com/en/ranking",
+        "user_id": 1,
+        "date": "20/08/2022"
+    }
+]
