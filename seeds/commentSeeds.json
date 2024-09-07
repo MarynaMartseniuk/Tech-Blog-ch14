@@ -1,0 +1,44 @@
+[
+    {
+      "content": "interesting!",
+      "user_id": 2,
+      "post_id": 1,
+      "date": "15/10/2022"
+    },
+    {
+        "content": "I will check later",
+        "user_id": 4,
+        "post_id": 1,
+        "date": "20/01/2023"
+    },
+    {
+        "content": "need to read more about it",
+        "user_id": 1,
+        "post_id": 3,
+        "date": "20/01/2023"
+    },
+    {
+        "content": "I not sure",
+        "user_id": 4,
+        "post_id": 7,
+        "date": "20/01/2023"
+    },
+    {
+        "content": "It is true, I know",
+        "user_id": 3,
+        "post_id": 7,
+        "date": "21/01/2023"
+    },
+    {
+        "content": "It is your subjective opinion",
+        "user_id": 4,
+        "post_id": 7,
+        "date": "22/01/2023"
+    },
+    {
+        "content": "Find it intresting! Is this up to date?",
+        "user_id": 2,
+        "post_id": 7,
+        "date": "15/01/2024"
+    }
+]
