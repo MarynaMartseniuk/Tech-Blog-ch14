@@ -10,54 +10,42 @@
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <nav>
+  <div>
+
+    <header>
+      <div>
+        <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/dashboard">Dashboard</a>
-            <a href="/login">login</a>
-            <a href="/logout">logout</a>
-
-            {{!-- display title on the page --}}
-            {{!-- public/js/dashboard.js --}}
-            {{#if isDashboard}}
-            <h1>Your Dashboard</h1>
-            {{else}}
-            <h1>The Tech Blog</h1>
-            {{/if}}
-
-            {{!-- <a href="/profile">profile</a> |
-            <button class="no-button" id="logout">logout</button> --}}
+            <a href="/logout" id="logout">logout</a>
 
         {{else}}
 
             <a href="/home">Home</a>
-            <a href="/login">Dashboard</a>
+            <a href="/dashboard">Dashboard</a>
             <a href="/login">login</a>
-            <a href="/login">logout</a>
-
-            {{!-- <h1><a href="/">The Tech Blog</a></h1> --}}
-            <h1>The Tech Blog</h1>
+ 
         {{/if}}
-      </nav>
-      
-      
+        </nav>
+      </div>
     </header>
-    <main class="container container-fluid mt-5">
+
+    <main>
       <!-- pages-view are coming here: -->
       {{{ body }}}
     </main>
+
     <footer>
-      
     </footer>
+
   </div>
 
-  <!-- Render script for logged in users only -->
+  <!-- Make available this script for logged in users only -->
   {{#if logged_in}}
-  <script src="/js/logout.js"></script>
+  <script src="../../public/js/logout.js"></script>
   {{/if}}
+  <script src="../../public/js/main.js"></script>
 </body>
-
 </html>

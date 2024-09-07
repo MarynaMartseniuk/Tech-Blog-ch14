@@ -31,7 +31,7 @@ router.get('/', async (req, res) => {
 // display Login page for user, so user can log in
 router.get('/login', async (req, res) => {
   try{
-      res.render('sigin');
+      res.render('signin');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -39,9 +39,9 @@ router.get('/login', async (req, res) => {
 
 // user wants to create a profile/account
 // display SignUp page for user, so user can create an profile and log in into it
-router.get('/sigup', async (req, res) => {
+router.get('/signup', async (req, res) => {
   try{
-      res.render('sigup');
+      res.render('signup');
   } catch (err) {
     res.status(500).json(err);
   }
