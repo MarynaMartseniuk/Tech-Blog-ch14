@@ -20,6 +20,9 @@ router.post('/login', async (req, res) => {
       res.status(400).json({ message: 'Login failed. Please try again!' });
       return;
     }
+
+
+    
     // if user was found by provided username and password was verified then go to personal-page
     res.status(200).json({ message: 'You are now logged in!' });
   } catch (err) {
