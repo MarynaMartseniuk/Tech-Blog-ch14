@@ -1,0 +1,1 @@
+//TODO if user is LogedIn and click on a NewPost button (in a Dashboard), then display a Newpost page

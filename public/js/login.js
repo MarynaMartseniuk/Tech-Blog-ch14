@@ -1,15 +1,33 @@
+const usernameInput = document.querySelector("#user-name-login");
+const passwordInput = document.querySelector("#password-login");
+
+
 const login = async () => {
-    const response = await fetch('/api/users/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    });
-  
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert(response.statusText);
-    }
+    if (usernameInput.value&&passwordInput.value) {
+
+      
+
+      let loginInput = {
+                        username: usernameInput.value,
+                        password: passwordInput.value
+                        };
+      
+    
+
+      const response = await fetch('/api/users/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: loginInput
+      });
+    
+      if (response.ok) {
+        document.location.replace('/profile');
+      } else {
+        alert(response.statusText);
+      };
+    };
   };
+
 
   const changeToSignup = async () => {
     document.location.replace('/signup');

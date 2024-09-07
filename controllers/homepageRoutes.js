@@ -50,14 +50,15 @@ router.get('/signup', async (req, res) => {
 // if user pass uathentification then display a landing page - an empty Dashboard page
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Post }],
-    });
+    // // Find the logged in user based on the session ID
+    // const userData = await User.findByPk(req.session.user_id, {
+    //   attributes: { exclude: ['password'] },
+    //   include: [{ model: Post }],
+    // });
 
-    const user = userData.get({ plain: true });
+    // const user = userData.get({ plain: true });
 
+    //render empty page
     res.render('dashboard', {
       //...user,
       logged_in: true
@@ -131,3 +132,5 @@ router.get('/posts/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
