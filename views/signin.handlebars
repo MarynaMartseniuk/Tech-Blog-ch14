@@ -1,20 +1,35 @@
-<h2>Login</h2>
+<div id="login-container">
 
-<form id="login-form">
   <div>
-    <label for="user-name-login">username:</label>
-    <input type="input" id="user-name-login" />
+    <h2>The Tech Blog</h2>
   </div>
-    <div></div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
+
+  <div id="login-card">
+      <div>
+        <h3>Sign Up</h3>
+      </div>
+
+      <form id="login-form">
+        <div>
+          <label for="user-name-login">username:</label>
+          <input type="input" id="user-name-login" />
+        </div>
+
+        <div>
+          <label for="password-login">password:</label>
+          <input type="password" id="password-login" />
+        </div>
+
+        <div>
+          <button id="login-submit" type="submit">login!</button>
+        </div>
+      </form>
+
+      <div>
+        <button id="change-to-signup" type="button">Sign up instead</button>
+      </div>
   </div>
-  <div>
-    <button type="submit">login!</button>
-  </div>
-</form>
-  <div>
-    <button id="change-to-signup" type="button">Sign up instead</button>
-  </div>
+
+</div>
 
 <script src="/js/login.js"></script>

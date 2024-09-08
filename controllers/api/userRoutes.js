@@ -26,11 +26,11 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
-      res.status(200).json(userData);
+      res.status(200).json({ user: userData, message: 'You are now logged in!' });
     });
     
     // if user was found by provided username and password was verified then go to personal-page
-    res.status(200).json({ message: 'You are now logged in!' });
+    //res.status(200).json({ message: 'You are now logged in!' });
   } catch (err) {
     res.status(500).json(err);
   }
