@@ -1,26 +1,29 @@
-<div id="post-container"></div>
+<div class="containerTitle">
+    <h2 class="window">Your Dashboard</h2>
+</div>
+
+<div id="post-container" class="main-container">
+
     <div>
-        <h2>Your Dashboard</h2>
+        <h3 class="cardTitle">Edit Post</h3>
     </div>
 
-    <div id="editPost-card">
-        <div>
-            <h3>Edit Post</h3>
-        </div>
+    <div id="editPost-card" class="card">
+
         <form id="editPost-form">
             <div>
-                <label for="editPost-title">Title</label>
+                <label for="editPost-title">Title</label><br/>
                 <input type="input" id="newPost-title" />
             </div>
             <div>
-                <label for="editPost-content">Content</label>
+                <label for="editPost-content">Content</label><br/>
                 <input type="input" id="editPost-content" />
             </div>
             <div>
-                <button id="editPost-submit" type="submit">Update Post</button>
+                <button id="editPost-submit" class="card-btn" type="submit">Update Post</button>
             </div>
             <div>
-                <button id="editPost-delete" type="submit">Delete</button>
+                <button id="editPost-delete" class="card-btn" type="submit">Delete</button>
             </div>
         </form>
     </div>

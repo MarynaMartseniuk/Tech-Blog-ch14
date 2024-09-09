@@ -1,23 +1,26 @@
-<div id="newPost-container">
+<div class="containerTitle">
+    <h2 class="window">Your Dashboard</h2>
+</div>
+
+<div id="newPost-container" class="main-container">
+
     <div>
-        <h2>Your Dashboard</h2>
+        <h3 class="cardTitle">Create New Post</h3>
     </div>
 
-    <div id="createNewPost-card">
-        <div>
-            <h3>Create New Post</h3>
-        </div>
+    <div id="createNewPost-card" class="card">
+
         <form id="newPost-form">
             <div>
-                <label for="newPost-title">Title</label>
+                <label for="newPost-title">Title</label><br/>
                 <input type="input" id="newPost-title" />
             </div>
             <div>
-                <label for="newPost-content">Content</label>
+                <label for="newPost-content">Content</label><br/>
                 <input type="input" id="newPost-content" />
             </div>
             <div>
-                <button id="newPost-create" type="submit">Create</button>
+                <button id="newPost-create" class="card-btn" type="submit">Create</button>
             </div>
         </form>
     </div>

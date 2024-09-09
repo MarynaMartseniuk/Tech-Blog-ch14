@@ -1,32 +1,34 @@
-<div id="login-container">
-
-  <div>
-    <h2>The Tech Blog</h2>
+  <div class="containerTitle">
+    <h2 class="window">The Tech Blog</h2>
   </div>
 
-  <div id="login-card">
-      <div>
-        <h3>Sign Up</h3>
-      </div>
+<div id="login-container" class="main-container">
+
+  <div>
+    <h3 class="cardTitle">Sign Up</h3>
+  </div>
+
+  <div id="login-card" class="card">
+
 
       <form id="login-form">
         <div>
-          <label for="user-name-login">username:</label>
+          <label for="user-name-login">Username:</label><br/>
           <input type="input" id="user-name-login" />
         </div>
 
         <div>
-          <label for="password-login">password:</label>
+          <label for="password-login">Password:</label><br/>
           <input type="password" id="password-login" />
         </div>
 
         <div>
-          <button id="login-submit" type="submit">login!</button>
+          <button id="login-submit" class="card-btn" type="submit">Login!</button>
         </div>
       </form>
 
       <div>
-        <button id="change-to-signup" type="button">Sign up instead</button>
+        <button id="change-to-signup" class="change-btn" type="button">Sign up instead</button>
       </div>
   </div>
 
