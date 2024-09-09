@@ -1,0 +1,141 @@
+:root {
+    --lGreen: rgb(242, 253, 242);
+    --Green: rgb(198, 241, 198);
+    --dBrown: rgb(73, 38, 38);
+    --Grey: rgb(160, 158, 158);
+    --Blue: rgb(60, 147, 247);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dBrown);
+}
+
+
+a {
+    color: var(--lGreen);
+    font-weight: 400;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+h2 {
+    margin: 0;
+    display: inline;
+}
+
+input {
+    padding: 5px;
+    width: 96%;
+    border: 2px;
+    border-style:solid;
+    border-radius: 3px;
+    border-color: var(--Blue);
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.window {
+    background-color: var(--Green);
+    color: var(--dBrown);
+    border: 0;
+    border-style:solid;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 4px 4px grey;
+}
+
+.containerTitle {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 15px;
+    background-color: var(--dBrown);
+    color: var(--lGreen);
+}
+
+.main-container {
+    height: 100vh;
+    padding: 10px;
+    background-color: var(--Green);
+
+    border: 2px;
+    border-style:solid;
+    border-color: var(--dBrown);
+
+}
+
+.card {
+    padding: 10px;
+    margin: 0px;
+    margin-top: 0;
+    border: 2px;
+    border-style:solid;
+    border-color: var(--dBrown);
+    background-color: var(--Green);
+    color: var(--dBrown);
+    font-weight: 500; 
+}
+
+.cardTitle {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--dBrown);
+    color: var(--lGreen);
+}
+
+.comment {
+    color: var(--dBrown);
+}
+
+.card-btn {
+    border: 0;
+    border-radius: 2px;
+    width: 97%;
+    margin: 5px;
+    margin-left: 0;
+    padding: 5px;
+    padding-left: 0;
+    background-color: var(--Grey);
+    color: var(--lGreen);
+}
+
+.change-btn {
+    border: 0;
+    border-radius: 2px;
+    background-color: var(--Green);
+    color: var(--Blue);  
+}
+
+.change-btn:hover {
+    background-color: var(--Blue);
+    color: var(--lGreen);  
+}
+
+.add-newpost {
+    border: 0;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--dBrown);
+    color: var(--lGreen);
+    font-size: 20px;
+}
+
+#mainDiv {
+    border: 0px;
+    border-style:solid;
+    border-color: var(--dBrown);
+}
+
+#nav {
+    padding: 10px;
+    background-color: var(--dBrown);
+    color: var(--lGreen);
+}
