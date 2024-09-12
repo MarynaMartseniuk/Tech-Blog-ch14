@@ -7,17 +7,23 @@ const displayAllPosts = async () => {
     // const description = document.querySelector('#project-desc').value.trim();
   
     
-    const response = await fetch(`/`, {
-        method: 'GET',
-        //headers: {'Content-Type': 'application/json',},
-    });
+    // const response = await fetch(`/`, {
+    //     method: 'GET',
+    //     //headers: {'Content-Type': 'application/json',},
+    // });
 
-    if (response.ok) {
-        const postsData = await response.json();
-        console.log(postsData);
-    } else {
-    alert('Failed to get posts');
-    }
+    // if (response.ok) {
+
+    //     console.log('public/js/homepage.js: this response has been recieved from routs:')
+    //     console.log(response);
+
+    //     const postsData = await response.json();
+
+    //     console.log('public/js/homepage.js: postsData resived and will be rendered:');
+    //     console.log(postsData);
+    // } else {
+    // alert('Failed to get posts');
+    // }
     
   };
   
