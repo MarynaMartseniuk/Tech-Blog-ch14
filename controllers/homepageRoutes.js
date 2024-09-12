@@ -17,9 +17,10 @@ router.get('/', async (req, res) => {
       });
   
       const posts = postData.map((post) => post.get({ plain: true }));
-  
+      console.log('controllers/homepageRouts.js: postData that recieved from db:');
+      console.log(posts);
       res.render('homepage', { 
-        posts, 
+        posts: posts, 
         logged_in: req.session.logged_in 
       });
     } catch (err) {
