@@ -49,7 +49,7 @@ router.get('/signup', async (req, res) => {
 });
 
 // if user pass uathentification then display a landing page - an empty Dashboard page
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // // Find the logged in user based on the session ID
     // const userData = await User.findByPk(req.session.user_id, {
@@ -71,7 +71,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
 // if user is LogedIn and click on a Dashboard nav link 
 // display a Dashboard with all posts that this user created
-router.get('/dashboard', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
@@ -81,7 +81,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('dashboard', {
+    console.log('######## plain data about the user who loggedin from homeroutes.js/get(profile):');
+    console.log(userData);
+
+    res.render('profile', {
       ...user,
       logged_in: true
     });

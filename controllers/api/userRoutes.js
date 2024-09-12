@@ -22,8 +22,12 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    const loggedInUser = userData.get({plain: true });
+    console.log('!!!!!!!!!plain data about the user who wants to logg in:');
+    console.log(loggedInUser);
+
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = loggedInUser.id;
       req.session.logged_in = true;
 
       res.status(200).json({ user: userData, message: 'You are now logged in!' });
