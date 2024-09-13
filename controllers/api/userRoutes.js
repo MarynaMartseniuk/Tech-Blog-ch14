@@ -28,6 +28,7 @@ router.post('/login', async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = loggedInUser.id;
+      req.session.user_username = loggedInUser.username;
       req.session.logged_in = true;
 
       res.status(200).json({ user: userData, message: 'You are now logged in!' });
@@ -42,9 +43,12 @@ router.post('/login', async (req, res) => {
 
 //user creates an profile/account
 //create a new user and a session
-router.post('/sigup', async (req, res) => {
+router.post('/signup', async (req, res) => {
+  console.log('================================')
+  console.log(req);
   try {
-    const userData = await User.create();
+    console.log(req);
+    const userData = await User.create(req.body);
     if (!userData) {
         res.status(404).json({ message: 'Failed to sigup. Please try again!' });
         return;
