@@ -51,19 +51,22 @@ router.get('/signup', async (req, res) => {
 // if user pass uathentification then display a landing page - an empty Dashboard page
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    // // Find the logged in user based on the session ID
-    // const userData = await User.findByPk(req.session.user_id, {
-    //   attributes: { exclude: ['password'] },
-    //   include: [{ model: Post }],
-    // });
-
-    // const user = userData.get({ plain: true });
-
-    //render empty page
-    res.render('dashboard', {
-      //...user,
-      //logged_in: true
-    });
+      //Find the logged in user based on the session ID
+      const postData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Post }],
+      });
+  
+      const post = postData.get({ plain: true });
+  
+      console.log('######## plain data about the user who loggedin from homeroutes.js/get(dashbord) with user posts:');
+      //console.log(user);
+      console.log(post);
+  
+      res.render('dashboard', {
+        ...post,
+        logged_in: true
+      });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -76,13 +79,12 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Post }],
     });
 
     const user = userData.get({ plain: true });
 
     console.log('######## plain data about the user who loggedin from homeroutes.js/get(profile):');
-    console.log(userData);
+    console.log(user);
 
     res.render('profile', {
       ...user,

@@ -5,25 +5,24 @@
 <div id="homepage-container" class="main-container">
    
     <div id="allPosts-container">
-    {{#each posts as | onepost | }}
+        {{#each posts as | onepost | }}
 
-        <div class="cardTitle flex">
-            <div>
-                {{onepost.title}}
+            <div class="cardTitle flex">
+                <div>
+                    {{onepost.title}}
+                </div>
+                <div class="postsign">
+                    Posted by {{onepost.user.username}}
+                    on {{onepost.date}}
+                </div>
             </div>
-            <div class="postsign">
-                Posted by {{onepost.user.username}}
-                on {{onepost.date}}
-            </div>
+
+        <div class="card">
+                <div class="onePostDisplay-content">
+                    {{onepost.content}}
+                </div>
         </div>
-
-       <div class="card">
-            <div class="onePostDisplay-content">
-                {{onepost.content}}
-            </div>
-       </div>
-    {{/each}}  
-        
+        {{/each}}  
     </div>
   
 </div>

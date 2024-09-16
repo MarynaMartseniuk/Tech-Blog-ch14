@@ -139,6 +139,11 @@ button {
     font-size: 20px;
 }
 
+.bthToCenter {
+    display: flex;
+    justify-content: center;
+}
+
 #mainDiv {
     border: 0px;
     border-style:solid;
