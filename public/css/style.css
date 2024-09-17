@@ -111,8 +111,7 @@ button {
 }
 
 .dasboardTitle:hover {
-    background-color: var(--lGreen);
-    color: var(--Grey);
+    opacity: 0.8;
 }
 
 
