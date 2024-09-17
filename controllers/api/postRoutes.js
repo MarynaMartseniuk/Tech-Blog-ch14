@@ -27,7 +27,8 @@ router.get('/:id', withAuth, async (req, res) => {
     console.log(reqPost);
 
     res.render('post', { 
-      posts: reqPost, 
+      post: reqPost, 
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in 
     });
 
@@ -40,7 +41,10 @@ router.get('/:id', withAuth, async (req, res) => {
 //create a new post
 router.post('/', withAuth, async (req, res) => {  
     try {
-      const postData = await Post.create(req.body);
+      const postData = await Post.create({
+        ...req.body,
+        user_id: req.session.user_id
+      });
       if (!postData) {
           res.status(404).json({ message: 'Post was not created! Please, try again!' });
           return;

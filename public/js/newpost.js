@@ -14,7 +14,6 @@ const addNewPostFunction = async (event) => {
       let newPOST = {
         title: newTitleInput.value.trim(),
         content: newContentInput.value.trim(),
-        user_id: 2,
       };
       console.log(newPOST);
       const response = await fetch('/api/posts/', {

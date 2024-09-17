@@ -7,14 +7,19 @@
     <div id="myPosts_container">
         {{#each posts as | onepost | }}
 
-        <div class="dasboardTitle flex">
+        <div  class="dasboardTitle flex">
+        <a href="/api/posts/{{onepost.id}} ">
             <div>
-                {{onepost.title}}
+                {{onepost.title}} 
+                
             </div>
             <div class="postsign">
                 Posted by {{onepost.user.username}}
                 on {{onepost.date}}
             </div>
+
+        </a>
+
         </div>
 
        {{!-- <div class="card">
@@ -26,7 +31,7 @@
     </div>
 
     <div class="bthToCenter">
-        <button class="add-newpost" type="button">+ New Post</button>
+        <a class="add-newpost" href="/newpost">+ New Post</a>
     </div> 
 
 </div>

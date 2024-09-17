@@ -13,16 +13,17 @@
         <form id="editPost-form">
             <div>
                 <label for="editPost-title">Title</label><br/>
-                <input type="input" id="newPost-title" value={{reqPost.title}} />
+                <input type="input" id="newPost-title" value="{{post.title}}" />
             </div>
             <div>
                 <label for="editPost-content">Content</label><br/>
-                <input type="input" id="editPost-content" value={{reqPost.content}}/>
+                <input type="input" id="editPost-content" value="{{post.content}}"/>
             </div>
             <div>
                 <button id="editPost_update" class="card-btn" type="submit">Update Post</button>
             </div>
             <div>
+                <input type="hidden" id="userID" value="{{user_id}}"/>
                 <button id="editPost_delete" class="card-btn" type="submit">Delete</button>
             </div>
         </form>

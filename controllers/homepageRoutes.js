@@ -99,7 +99,9 @@ router.get('/profile', withAuth, async (req, res) => {
 // display a Newpost page
 router.get('/newpost', withAuth, async (req, res) => {
   try {
-        res.render('newpost');
+        res.render('newpost', {
+          user_id: req.session.user_id,
+        });
   } catch (err) {
     res.status(500).json(err);
   }
