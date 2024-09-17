@@ -2,13 +2,18 @@
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well
 
 ## Description
-### Motivation to create this App was 
+### Motivation to create this App was to create wide use blog WebApp based on MVC
 ### I built this App because it had some new coding challanges needed to be solved. For me, as for a begginer, it was importent to get a new skills and got understanding that "I can do it!".
-### This App helps with
+### This App helps with 
+- save important info you want to have access any time;
+- share this info with others;
+- discuss ideas
+  
 ### This project was interesting and usefull for me because, as a begginer, I learned how:
-- ;
-- ;
-- .
+- learn MVC;
+- learn handlebars;
+- how to operate in between frony end and back end (pass the data);
+- how sessions works.
 
 ## Table of Contents
 
