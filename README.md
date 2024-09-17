@@ -28,12 +28,22 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 3. run "npm install" to buid the App;
 4. run "node server.js" to create/connect db models;
 5. run "node seeds/index.js" to seed database;
-6. run "node server.js" to start the App. 
-7.
+6. run "node server.js" to start the App; 
+7. Ctrl+C to exit the App.
 
 ### run the App will look like this:
-![run the App will look like this:]()
-
+1. home page with all posts of all users:
+![home page the App will look like this:](https://github.com/MarynaMartseniuk/Tech-Blog-ch14/blob/main/assets/images/home.jpg)
+2. To login/signup click link in the nav bar on the toop of the page:
+![login page App will look like this:](https://github.com/MarynaMartseniuk/Tech-Blog-ch14/blob/main/assets/images/login.jpg)
+3. Landing page for the user who has loggedIn:
+![landing page for user who passed login-check the App will look like this:](https://github.com/MarynaMartseniuk/Tech-Blog-ch14/blob/main/assets/images/landing.jpg)
+4. If you loggedIn: Click on Dashboard link in the nav bar on the toop of the page to see all your posts:
+![dashboard page with user posts the App will look like this:](https://github.com/MarynaMartseniuk/Tech-Blog-ch14/blob/main/assets/images/dashboard.jpg)
+5. If you loggedIn: Click on any post from Dashbord to be able to edit it (edit/delete): (page is displayed, but edit/delete functionality is under construction)
+![edit post page the App will look like this:](https://github.com/MarynaMartseniuk/Tech-Blog-ch14/blob/main/assets/images/postEdit.jpg)
+6. If you loggedIn: Click on Homepage in the nav bar on the toop of the page to see all posts of all users and click on any post to add a coment: (under construction)
+7. If you loggedIn: Click on Logout in the nav bar on the toop of the page to loggout of your account.
 
 ## Credits
 1. source of code: UofU bootcamp, module 14, activities 06, 23, 28
