@@ -4,10 +4,10 @@
 
 <div id="dashboard-container" class="main-container">
 
-    <div id="myPosts-container">
+    <div id="myPosts_container">
         {{#each posts as | onepost | }}
 
-        <div class="cardTitle flex">
+        <div class="dasboardTitle flex">
             <div>
                 {{onepost.title}}
             </div>
@@ -17,11 +17,11 @@
             </div>
         </div>
 
-       <div class="card">
+       {{!-- <div class="card">
             <div class="onePostDisplay-content">
                 {{onepost.content}}
             </div>
-       </div>
+       </div> --}}
     {{/each}}
     </div>
 
