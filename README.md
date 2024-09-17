@@ -9,9 +9,9 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 - share this info with others;
 - discuss ideas
   
-### This project was interesting and usefull for me because, as a begginer, I learned how:
-- learn MVC;
-- learn handlebars;
+### This project was interesting and usefull for me because, as a begginer, I learned:
+- MVC;
+- handlebars;
 - how to operate in between frony end and back end (pass the data);
 - how sessions works.
 
