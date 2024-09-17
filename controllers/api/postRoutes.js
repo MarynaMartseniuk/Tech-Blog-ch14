@@ -4,10 +4,47 @@ const User = require('../../models/User');
 const withAuth = require('../../utils/auth');
 
 // if user loged in 
+//get a user's post by post's id
+router.get('/:id', withAuth, async (req, res) => {
+  
+  console.log('!!!!!!!!!!!postRoutes => there is the user post ID: !!!!!!');
+  console.log(req.params.id);
+
+  try {
+    const reqPostData = await Post.findOne({ 
+      where: { 
+        id: req.params.id, 
+        user_id: req.session.user_id 
+      } 
+    });
+    if (!reqPostData) {
+        res.status(404).json({ message: 'Post was not found!' });
+        return;
+    };
+
+    const reqPost = reqPostData.get({plain: true });
+    console.log('!!!!!!!!!!!postRoutes => there is the user post DATA by post ID that has been gotten from database. User wants to update this DATA: !!!!!!')
+    console.log(reqPost);
+
+    res.render('post', { 
+      post: reqPost, 
+      user_id: req.session.user_id,
+      logged_in: req.session.logged_in 
+    });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// if user loged in 
 //create a new post
 router.post('/', withAuth, async (req, res) => {  
     try {
-      const postData = await Post.create();
+      const postData = await Post.create({
+        ...req.body,
+        user_id: req.session.user_id
+      });
       if (!postData) {
           res.status(404).json({ message: 'Post was not created! Please, try again!' });
           return;

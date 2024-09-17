@@ -2,7 +2,7 @@
     --lGreen: rgb(242, 253, 242);
     --Green: rgb(198, 241, 198);
     --dBrown: rgb(73, 38, 38);
-    --Grey: rgb(160, 158, 158);
+    --Grey: rgb(136, 135, 135);
     --Blue: rgb(60, 147, 247);
 }
 
@@ -64,7 +64,6 @@ button {
     height: 100vh;
     padding: 10px;
     background-color: var(--Green);
-
     border: 2px;
     border-style:solid;
     border-color: var(--dBrown);
@@ -100,6 +99,22 @@ button {
     background-color: var(--dBrown);
     color: var(--lGreen);
 }
+
+.dasboardTitle {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: var(--Grey);
+    color: var(--lGreen);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dasboardTitle:hover {
+    background-color: var(--lGreen);
+    color: var(--Grey);
+}
+
 
 .comment {
     color: var(--dBrown);
@@ -137,6 +152,10 @@ button {
     background-color: var(--dBrown);
     color: var(--lGreen);
     font-size: 20px;
+}
+
+.add-newpost:hover {
+    box-shadow: 4px 4px 5px grey;
 }
 
 .bthToCenter {

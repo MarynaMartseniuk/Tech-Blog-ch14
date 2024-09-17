@@ -37,7 +37,8 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 
 ## Credits
 1. source of code: UofU bootcamp, module 14, activities 06, 23, 28
-2. source of code: UofU bootcamp, module 13, activities 16
+2. source of code: UofU bootcamp, module 13, activity 16
+3. source of code: UofU bootcamp, module 04, activity 19
 2. source of code: chatGPT
 
 ## License
